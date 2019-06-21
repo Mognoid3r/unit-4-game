@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <img src="assets/images/background.jpg">
+    <img src="assets/images/background2.jpg">
 
     <div class="grid">
         <div class="title">CrystalCollector!</div>
         <div class="header">
             <div class="scoreTitle">Your total score is:</div>
-            <div class="score">0</div>
-            <div class="winCount">win: 0</div>
-            <div class="lossCount">Losses: 0</div>
-            <div class="ranNum">Random Number</div>
+            <div class="score" id="score">0</div>
+            <div class="winCount" id="wins">win: 0</div>
+            <div class="lossCount" id="loses">Losses: 0</div>
+            <div class="ranNum" id="random-number">Random Number</div>
         </div>
         <div class="sidebar">
             <p>You will be given a random number at the start of the game.</p>
@@ -38,10 +38,10 @@
             <p>Each time a new game starts, the game will change the value of each crystal.</p>
         </div>
         <div class="content">
-            <div class="imageOne"><img src="assets/images/crystal1.png"></div>
-            <div class="imageTwo"><img src="assets/images/crystal2.png"></div>
-            <div class="imageThree"><img src="assets/images/crystalSlime.png"></div>
-            <div class="imageFour"><img src="assets/images/crystalman.png"></div>
+            <div class="imageOne crystal" id="image-one"><img src="assets/images/crystal1.png"></div>
+            <div class="imageTwo crystal" id="image-two"><img src="assets/images/crystal2.png"></div>
+            <div class="imageThree crystal" id="image-three"><img src="assets/images/crystalSlime.png"></div>
+            <div class="imageFour crystal" id="image-four"><img src="assets/images/crystalman.png"></div>
         </div>
         <div class="footer">Copywrite © Lonnie P.</div>
     </div>
@@ -77,7 +77,7 @@
 
     * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means
     to restart the game. -->
-
+    <script src="assets/game.js"></script>
 </body>
 
 </html>
